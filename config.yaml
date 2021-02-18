@@ -16,7 +16,7 @@ settings:
 
 monitors:
   - id: aqua-website # unique identifier
-    name: itsaqua.net
+    name: Official Website
     description: 'Official Aqua Website' # default=empty
     url: 'https://itsaqua.net' # URL to fetch
     method: GET # default=GET
@@ -27,5 +27,19 @@ monitors:
     name: Staff Panel
     description: 'Official Aqua Staff Panel'
     url: 'https://staff.itsaqua.net'
+    method: GET
+    expectStatus: 200
+
+  - id: aqua-api
+    name: API
+    description: 'Stats API'
+    url: 'https://api.itsaqua.net/stats'
+    method: GET
+    expectStatus: 200
+
+  - id: aqua-stream
+    name: Radio Stream
+    description: 'Live Audio Stream'
+    url: 'https://live.itsaqua.net'
     method: GET
     expectStatus: 200
