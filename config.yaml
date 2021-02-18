@@ -47,7 +47,7 @@ monitors:
   - id: aqua-verification
     name: Verification
     description: 'Discord Verification System'
-    url: 'https://verify.itsaqua.net'
+    url: 'https://verify.itsaqua.net/checkalive'
     method: GET
     expectStatus: 200
     
