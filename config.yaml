@@ -51,7 +51,7 @@ monitors:
     method: GET
     expectStatus: 200
     
-   - id: aqua-bot
+  - id: aqua-bot
     name: Discord Bot
     description: 'Discord Bot'
     url: 'http://de.2.ddidev.xyz:4579'
