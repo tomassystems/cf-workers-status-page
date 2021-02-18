@@ -43,3 +43,4 @@ monitors:
     url: 'https://live.itsaqua.net'
     method: GET
     expectStatus: 200
+    
