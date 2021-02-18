@@ -43,3 +43,18 @@ monitors:
     url: 'https://live.itsaqua.net'
     method: GET
     expectStatus: 200
+
+  - id: aqua-verification
+    name: Verification
+    description: 'Discord Verification System'
+    url: 'https://verify.itsaqua.net'
+    method: GET
+    expectStatus: 200
+    
+   - id: aqua-bot
+    name: Discord Bot
+    description: 'Discord Bot'
+    url: 'http://de.2.ddidev.xyz:4579'
+    method: GET
+    expectStatus: 200
+    
