@@ -23,13 +23,6 @@ monitors:
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
 
-  - id: staff-panel
-    name: Staff Panel
-    description: 'Official Aqua Staff Panel'
-    url: 'https://staff.itsaqua.net'
-    method: GET
-    expectStatus: 200
-
   - id: aqua-api
     name: API
     description: 'Stats API'
