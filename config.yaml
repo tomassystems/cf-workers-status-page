@@ -29,6 +29,7 @@ monitors:
     url: 'https://staff.itsaqua.net'
     method: GET
     expectStatus: 200
+    followRedirect: true
 
   - id: aqua-api
     name: API
