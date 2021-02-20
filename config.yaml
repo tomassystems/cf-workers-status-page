@@ -38,6 +38,13 @@ monitors:
     method: GET
     expectStatus: 200
 
+  - id: aqua-cdn
+    name: CDN
+    description: 'Album Cover CDN'
+    url: 'https://cdn.itsaqua.net'
+    method: GET
+    expectStatus: 200
+
   - id: aqua-stream
     name: Radio Stream
     description: 'Live Audio Stream'
@@ -58,4 +65,25 @@ monitors:
     url: 'http://de.2.ddidev.xyz:4579'
     method: GET
     expectStatus: 200
-    
+
+  - id: aqua-lnk
+    name: Link Shortener Service
+    description: 'Link Shortener Service'
+    url: 'https://lnk.itsaqua.net'
+    method: GET
+    expectStatus: 200
+    followRedirect: true
+
+  - id: aqua-retro
+    name: Retro Player
+    description: 'Embeddable Retro Player'
+    url: 'https://retro.itsaqua.net'
+    method: GET
+    expectStatus: 200
+
+  - id: aqua-migadu
+    name: Migadu
+    description: 'Migadu Mail Provider'
+    url: 'https://www.migadu.com'
+    method: GET
+    expectStatus: 200
