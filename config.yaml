@@ -40,7 +40,7 @@ monitors:
 
   - id: aqua-cdn
     name: CDN
-    description: 'Album Cover CDN'
+    description: 'Image CDN'
     url: 'https://cdn.itsaqua.net'
     method: GET
     expectStatus: 200
