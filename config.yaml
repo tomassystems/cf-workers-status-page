@@ -1,7 +1,7 @@
 settings:
-  title: 'Status Page'
-  url: 'https://status-page.eidam.dev' # used for Slack messages
-  logo: logo-192x192.png # image in ./public/ folder
+  title: 'Triple - Status'
+  url: 'https://status.itstriple.net' # used for Slack messages
+  logo: 'https://cdn.tomas.systems/triple_white_text.png' # image in ./public/ folder
   daysInHistogram: 90 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
 
@@ -15,23 +15,26 @@ settings:
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
-  - id: workers-cloudflare-com # unique identifier
-    name: workers.cloudflare.com
-    description: 'You write code. They handle the rest.' # default=empty
-    url: 'https://workers.cloudflare.com/' # URL to fetch
-    method: GET # default=GET
-    expectStatus: 200 # operational status, default=200
-    followRedirect: false # should fetch follow redirects, default=false
-
-  - id: www-cloudflare-com
-    name: www.cloudflare.com
-    description: 'Built for anything connected to the Internet.'
-    url: 'https://www.cloudflare.com'
+  - id: website
+    name: Website
+    url: 'https://itstriple.net'
     method: GET
     expectStatus: 200
 
-  - id: blog-cloudflare-com
-    name: The Cloudflare Blog
-    url: 'https://blog.cloudflare.com/'
+  - id: stream
+    name: Stream
+    url: 'https://live.tripleradio.net'
+    method: GET
+    expectStatus: 200
+
+  - id: api
+    name: API
+    url: 'https://api.itstriple.net'
+    method: GET
+    expectStatus: 200
+    
+  - id: mail
+    name: Mail
+    url: 'https://webmail.tomas.systems'
     method: GET
     expectStatus: 200
