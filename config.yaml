@@ -2,7 +2,7 @@ settings:
   title: 'Triple - Status'
   url: 'https://status.itstriple.net' # used for Slack messages
   logo: 'https://cdn.tomas.systems/triple_white_text.png' # image in ./public/ folder
-  daysInHistogram: 90 # number of days you want to display in histogram
+  daysInHistogram: 30 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
 
   allmonitorsOperational: 'All Systems Operational'
