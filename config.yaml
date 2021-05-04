@@ -83,7 +83,7 @@ monitors:
 
   - id: aqua-migadu
     name: Migadu
-    description: 'Migadu Mail Provider'
+    description: 'Mail Provider'
     url: 'https://www.migadu.com'
     method: GET
     expectStatus: 200
