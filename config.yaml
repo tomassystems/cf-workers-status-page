@@ -21,12 +21,6 @@ monitors:
     method: GET
     expectStatus: 200
 
-  - id: stream
-    name: Stream
-    url: 'https://live.tripleradio.net'
-    method: GET
-    expectStatus: 200
-
   - id: api
     name: API
     url: 'https://api.itstriple.net'
@@ -36,5 +30,12 @@ monitors:
   - id: mail
     name: Mail
     url: 'https://webmail.tomas.systems'
+    method: GET
+    expectStatus: 200
+
+
+  - id: radio-stream
+    name: Stream
+    url: 'https://stream.itstriple.net'
     method: GET
     expectStatus: 200
